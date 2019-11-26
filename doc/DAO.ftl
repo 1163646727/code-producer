@@ -5,10 +5,13 @@ import ${package_name}.dto.${table_name}DTO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+
 /**
- * 描述：${table_annotation}DAO 层
- * @author ${author}
- * @date ${date}
+ * interfaceName: ${table_name}DAO <BR>
+ * description: ${table_annotation}DAO 层<BR>
+ * remark: <BR>
+ * author: ${author} <BR>
+ * createDate: ${date} <BR>
  */
 @MyBatisRepository
 public interface ${table_name}DAO {

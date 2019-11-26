@@ -17,7 +17,7 @@ public interface I${table_name}Service extends IBaseService<${table_name},String
     * @param id
     */
     ${table_name}DTO findDTOById(String id)throws Exception;
-table_name = AyTest
+
     ${table_name}DTO create${table_name}(${table_name}DTO ${table_name?uncap_first}DTO) throws Exception;
 
     ${table_name}DTO update${table_name}(${table_name}DTO ${table_name?uncap_first}DTO) throws Exception;
