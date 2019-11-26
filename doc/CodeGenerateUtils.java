@@ -31,6 +31,8 @@ public class CodeGenerateUtils {
     private final String PACKAGE_NAME = "com.evada.pm.process.manage";
     /** 代码生成的位置 **/
     private final String DISK_PATH = "D://";
+    /* 获取当前目录位置 ChenQi*/
+    System.out.println(System.getProperty("user.dir"));//user.dir指定了当前的路径
     /** 将表名转成实体类格式的名称
      * 例如：ay_test 变成 AyTest **/
     private final String CHANGE_TABLE_NAME = replaceUnderLineAndUpperCase(TABLE_NAME);
