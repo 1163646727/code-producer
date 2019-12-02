@@ -42,11 +42,11 @@ public class CodeGenerateUtils {
      */
     public Connection getConnection() throws Exception{
         //数据库连接路径
-        final String URL = "jdbc:postgresql://localhost:5432/postgres";
+        final String URL = "jdbc:postgresql://47.110.150.127/test";
         //用户名
-        final String USER = "postgres";
+        final String USER = "root";
         //密码
-        final String PASSWORD = "root";
+        final String PASSWORD = "";
         //驱动名称
         final String DRIVER = "org.postgresql.Driver";
         //生成数据库连接

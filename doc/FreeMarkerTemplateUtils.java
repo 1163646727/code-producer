@@ -15,9 +15,15 @@ public class FreeMarkerTemplateUtils {
 
     private FreeMarkerTemplateUtils(){}
     private static final Configuration CONFIGURATION = new Configuration(Configuration.VERSION_2_3_22);
-
+    /* 获取当前目录位置 ChenQi*/
+    static String basePackagePath = System.getProperty("user.dir");
     static{
-        CONFIGURATION.setTemplateLoader(new ClassTemplateLoader(FreeMarkerTemplateUtils.class, "/templates"));
+        try {
+            // 设置模板文件路径 ChenQi
+            CONFIGURATION.setDirectoryForTemplateLoading (new File (basePackagePath+"/doc"));
+        } catch (IOException e) {
+            e.printStackTrace ();
+        }
         CONFIGURATION.setDefaultEncoding("UTF-8");
         CONFIGURATION.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
         CONFIGURATION.setCacheStorage(NullCacheStorage.INSTANCE);
